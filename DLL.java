@@ -1,4 +1,4 @@
-package miniAssignment1;
+// package miniAssignment1;
 
 // Taken from https://www.geeksforgeeks.org/doubly-linked-list/ (originally posted by Sumit Ghosh) 
 // Updated for this use case
@@ -94,26 +94,26 @@ public class DLL {
  } 
  
  // remove at
- public void removeAt(DLL list, Node curNode) {
-	   Node sucNode = curNode.next;
-	   Node predNode = curNode.prev;
+//  public void removeAt(DLL list, Node curNode) {
+// 	   Node sucNode = curNode.next;
+// 	   Node predNode = curNode.prev;
 
-	   if (sucNode != null) {
-	      sucNode.prev = predNode;
-	   }
+// 	   if (sucNode != null) {
+// 	      sucNode.prev = predNode;
+// 	   }
 
-	   if (predNode != null) {
-	      predNode.next = sucNode;
-	   }
+// 	   if (predNode != null) {
+// 	      predNode.next = sucNode;
+// 	   }
 
-	   if (curNode == list.head) { // Removed head
-	      list.head = sucNode;
-	   }
+// 	   if (curNode == list.head) { // Removed head
+// 	      list.head = sucNode;
+// 	   }
 
-	   if (curNode == list.tail) { // Removed tail
-	      list.tail = predNode;
-	   }
-	}
+// 	   if (curNode == list.tail) { // Removed tail
+// 	      list.tail = predNode;
+// 	   }
+// 	}
  
  public void testRemove(int data) {
 	 
